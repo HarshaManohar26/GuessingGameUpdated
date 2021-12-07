@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
 
         val randomNumber = (0..1000).random()
 
-        println("random no: $randomNumber")
-
         rightButton.setOnClickListener {
 
             if ((answerGuessed.text.toString().isNullOrEmpty()) or (answerGuessed.text.toString().toInt() > 1000)){
